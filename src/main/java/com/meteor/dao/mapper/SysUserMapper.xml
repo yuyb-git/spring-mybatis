@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapper namespace="com.meteor.dao.SysUserMapper">
+
+	<select id="getUser" resultType="com.meteor.domain.SysUser">
+		select * from sys_user where user_id = ?
+	</select>
+
+	<select id="getList" resultType="com.meteor.domain.SysUser">
+		select * from sys_user
+	</select>
+
+	<update id="updateUser">
+		update sys_user set nick_name = '123455' where user_id = ?
+	</update>
+
+</mapper>
